@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // 1. Defined UI views
+    // Defined UI views
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Lorem Ipsum"
@@ -43,12 +43,11 @@ class ViewController: UIViewController {
         return stackView
     }()
     
-    // 2
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupConstraints()
-        // 3. Add action
+        // Add action
         registerButton.addTarget(self, action: #selector(presentModalController), for: .touchUpInside)
     }
     
@@ -57,13 +56,13 @@ class ViewController: UIViewController {
         view.backgroundColor = .systemBackground
     }
     
-    // 4. Add subviews and set constraints
+    // Add subviews and set constraints
     func setupConstraints() {
         view.addSubview(containerStackView)
         containerStackView.translatesAutoresizingMaskIntoConstraints = false
         
         let safeArea = view.safeAreaLayoutGuide
-        // 5. Call .activate method to enable the defined constraints
+        // Call .activate method to enable the defined constraints
         NSLayoutConstraint.activate([
             // 6. Set containerStackView edges to superview with 24 spacing
             containerStackView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 24),
@@ -75,8 +74,12 @@ class ViewController: UIViewController {
         ])
     }
     
-    // 8. To be updated
+    // To be updated
     @objc func presentModalController() {
-        //
+        let vc = CustomModalViewController()
+        vc.modalPresentationStyle = .overCurrentContext
+        // keep false
+        // modal animation will be handled in VC itself
+        self.present(vc, animated: false)
     }
 }

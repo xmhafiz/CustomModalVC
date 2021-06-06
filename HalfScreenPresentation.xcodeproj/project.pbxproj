@@ -13,6 +13,7 @@
 		86131C31266C7F0F007421A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86131C2F266C7F0F007421A7 /* Main.storyboard */; };
 		86131C33266C7F19007421A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86131C32266C7F19007421A7 /* Assets.xcassets */; };
 		86131C36266C7F19007421A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86131C34266C7F19007421A7 /* LaunchScreen.storyboard */; };
+		86131C3E266CB420007421A7 /* CustomModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86131C3D266CB420007421A7 /* CustomModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		86131C32266C7F19007421A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86131C35266C7F19007421A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86131C37266C7F19007421A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86131C3D266CB420007421A7 /* CustomModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				86131C29266C7F0F007421A7 /* AppDelegate.swift */,
 				86131C2B266C7F0F007421A7 /* SceneDelegate.swift */,
 				86131C2D266C7F0F007421A7 /* ViewController.swift */,
+				86131C3D266CB420007421A7 /* CustomModalViewController.swift */,
 				86131C2F266C7F0F007421A7 /* Main.storyboard */,
 				86131C32266C7F19007421A7 /* Assets.xcassets */,
 				86131C34266C7F19007421A7 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86131C2E266C7F0F007421A7 /* ViewController.swift in Sources */,
+				86131C3E266CB420007421A7 /* CustomModalViewController.swift in Sources */,
 				86131C2A266C7F0F007421A7 /* AppDelegate.swift in Sources */,
 				86131C2C266C7F0F007421A7 /* SceneDelegate.swift in Sources */,
 			);
